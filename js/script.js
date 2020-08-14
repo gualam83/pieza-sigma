@@ -21,7 +21,7 @@ $(function () {
   });
 
   // CONTACT FORM
-  $(function() {
+  
     $('#submit').click(function () {
   
       let name = $('input[name=name]').val();
@@ -81,8 +81,6 @@ $(function () {
       });
       return false;
     });
-  });
-
 });
 
 
