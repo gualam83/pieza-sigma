@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <title>Pieza-Sigma</title>
+    <link rel="icon" href="images/faviconSigma.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/sigma-logo.png" alt="Sigma Logo">
+    </header>
+
+    <section class="description">
+        <h1>
+            Prueba de desarrollo Sigma
+        </h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+        </p>
+    </section>
+
+    <section class="containerPage">
+        <div class="box">
+            <img src="images/sigma-image.png" alt="">
+        </div>
+        <div class="box formContact">
+            <form id="register_form">
+                <div class="form-group">
+                    <label for="dateForm">Departamento*</label>
+                    <select class="custom-select" id="dateDepartment" type="text" name="state" required maxlength="30">
+                        <option value="">Selecciona un departamento</option>
+                    </select>
+                    <div id="messageState" class="mistakes">Por favor selecciona un departamento</div>
+                </div>
+                <div class="form-group">
+                    <label for="dateForm2">Ciudad*</label>
+                    <select class="custom-select" id="dateCity" type="text" name="city" required maxlength="50">
+                    </select>
+                    <div id="messageCity" class="mistakes">Por favor selecciona una ciudad</div>
+                </div>
+                <div class="form-group">
+                    <label for="dateForm3">Nombre*</label>
+                    <input type="text" class="form-control" id="dateName" name="name" placeholder="Escriba su nombre"
+                        required maxlength="50">
+                    <div id="messageName" class="mistakes">Por favor escribe tu nombre</div>
+                </div>
+                <div class="form-group">
+                    <label for="dateForm4">Correo*</label>
+                    <input type="email" class="form-control" id="dateMail" name="email" placeholder="Escriba su correo"
+                        required maxlength="30">
+                    <div id="messageEmail" class="mistakes">Por favor escribe un correo correcto</div>
+                </div>
+                <div class="buttonForm">
+                    <button class="btn btn-primary" id="submit" value="submit" name="submit"
+                        type="submit">ENVIAR</button>
+                </div>
+
+                <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Gracias!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Tu información ha sido recibida satisfactoriamente
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
